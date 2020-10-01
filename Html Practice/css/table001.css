@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: whitesmoke;
+}
+
+
+.heading-div
+{
+    background-color:#747d8c;
+    width: 400px;
+    height: 60px;
+    margin: auto;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    transition: 0.3s;
+}
+
+.heading-div:hover
+{
+    box-shadow: 0px 0px 2px 1px #34495e;
+}
+
+.heading-div h1
+{
+    color: #f1f2f6;
+    font-size: 32px;
+    font-family:helvetica;
+    text-align: center;
+    height: 100%;
+    padding-top:0.8rem;
+}
+
+.table-div
+{
+    background-color: ghostwhite;
+    width:40rem;
+    height: 30rem;
+    position: relative;
+    top:50%;
+    margin: auto;
+    transform: translate(0,6rem);
+    border-radius: 10px;
+    box-shadow: 0 0 5px 1px #57606f;
+    
+}
+
+.fieldset
+{
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    position: relative;
+    top:1.5%;
+    border: 2.1px solid grey;
+    border-radius: 6px;
+}
+.fieldset .legend
+{
+    color:#4b6584;
+    font-family: verdana;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-left:2% ;
+    padding-right: 1%;
+}
+
+.my-table{
+
+    width: 95%;
+    height: 90%;
+    background-color:white; 
+    margin: 1.4% auto;
+    text-align: center;
+    border-collapse: collapse;
+    /*border: 7px solid grey;*/
+    box-shadow: 0px 0px 2px .5px grey;
+    transition: .5s;
+    
+    
+}
+
+.my-table:hover{
+    
+    box-shadow: 0px 0px 5px 1px black;
+}
+.table-head{
+    background-color: #778ca3;
+    
+}
+
+.table-head th
+{
+    
+    height: 3rem;
+    font-family: Helvetica;
+    font-size: 15px;
+    font-weight:550;
+    padding-right: 10px;
+    
+      
+}
+
+.table-body tr:hover
+{
+  box-shadow: 0px 0px 8px 3px grey;
+}
+.table-body tr
+{
+    font-family: Helvetica;
+    font-size: .9rem;
+    border-bottom: 2px solid grey;
+ 
+}
+.table-body tr:nth-child(even){
+    
+    background-color:#d1d8e0;
+    
+    
+}
+.my-table colgroup col
+{
+    width:20%;
+    
+}
+
+.my-table .table-body tr:hover
+{
+    background-color: #7bed9f;
+}
+
+
+

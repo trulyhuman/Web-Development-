@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+    integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous">
+  </script>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:200,300,400,500,600,700,800,900|Roboto:300,400,500,700,900|Satisfy&display=swap");
+
+    *,
+    p {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+
+    body {
+      position: relative;
+    }
+
+    .section-1 {
+      height: 100vh;
+    }
+
+    .header-info {
+      background-color: #0e1c35;
+      height: 6vh;
+    }
+
+    .header-info p {
+      color: white;
+      padding-left: 10px;
+      font-family: "Barlow Condensed";
+    }
+
+    .navigation-bar {
+      box-shadow: 0px 0px 10px grey;
+      height: 10vh;
+      box-sizing: border-box;
+
+
+
+    }
+
+    .logo,
+    .navbar {
+      flex-grow: 1;
+
+    }
+
+    .nav-item>a {
+
+      font-family: "Barlow Condensed";
+      margin-left: 20px;
+      color: #2f3542;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.5s;
+    }
+
+    .nav-item>a:hover {
+      color: tomato;
+
+    }
+
+    .navbar-nav {
+      position: relative;
+      left: 60px;
+    }
+
+    .banner {
+      background-image: url("images/h1_hero.jpg");
+      height: 84vh;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .stylis-text h1 {
+      font-size: 100px;
+      font-weight: 400;
+      margin-bottom: 14px;
+      color: #fde02f;
+      font-family: "Satisfy";
+      line-height: 1.3;
+      margin-bottom: 17px;
+    }
+
+    .stylis-text h1 span {
+      position: relative;
+    }
+
+    .stylis-text h1 span::before {
+      position: absolute;
+      content: "";
+      background-image: url(images/hero-_ineShape.png);
+      background-repeat: no-repeat;
+      height: 35%;
+      z-index: -1;
+      bottom: 8%;
+      left: -4%;
+      right: -2px;
+      background-size: 100%;
+    }
+
+    .stylis-text p {
+      color: #fff;
+      font-size: 30px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin-bottom: 39px;
+      font-family: "Barlow Condensed";
+    }
+
+    .banner-center {
+      width: 70%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .form {
+      width: 100%;
+      height: 7rem;
+      background-color: rgba(255, 255, 255, .4);
+      border-radius: 10px;
+    }
+
+    .form form {
+      height: 100%;
+    }
+
+    .search input {
+      width: 512px;
+      height: 3rem;
+      padding: 20px;
+      border: none;
+      outline: none;
+      border-radius: 5px;
+      font-family: satisfy;
+      font-weight: bolder;
+    }
+
+    .select input {
+      width: 352px;
+      height: 3rem;
+      padding: 0px 20px;
+      border: none;
+      border-radius: 5px;
+      font-family: satisfy;
+      font-weight: bolder;
+      color: grey;
+      outline: none;
+
+    }
+
+    .select select option {
+      margin: 10px;
+    }
+
+    .btn {
+      padding: 11px 50px;
+    }
+
+
+    .section-2 {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      /* background: url(images/tuan-nguyen-kHP6Lfd8e_0-unsplash.jpg) no-repeat center ;*/
+      background-size: cover;
+      z-index: -1;
+      margin: auto;
+    }
+
+    .section-2::before {
+      content: "";
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.4);
+      width: 100%;
+      height: 100vh;
+      z-index: -1;
+    }
+
+    .section-heading {
+      width: 500px;
+      margin: auto;
+      text-align: center;
+      position: relative;
+      top: 3rem;
+    }
+
+    .room-card {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      top: 7rem;
+      border: none;
+      border-radius: 10px;
+
+    }
+
+    .room-card .card {
+      width: 370px;
+      height: 500px;
+      border: none;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 0px 0px 10px grey;
+      transition: .5s;
+    }
+
+    .card:hover {
+      box-shadow: 0px 0px 30px grey;
+      transform: scale(1.02);
+    }
+
+    .card-image img {
+      width: 100%;
+      border-radius: 8px 8px 0px 0px;
+
+
+    }
+
+    .card .info {
+      width: 100%;
+      margin: 20px;
+    }
+
+    .card .card-info {
+      width: 100%;
+      height: 100%;
+      padding: 15px;
+
+    }
+
+    .room-name {
+      font-family: "Barlow Condensed";
+    }
+
+    .section-heading p {
+      font-size: 25px;
+      font-family: "satisfy";
+    }
+
+    .section-heading h4 {
+      font-size: 40px;
+      font-family: "Barlow Condensed";
+    }
+
+
+    .line {
+      margin: 0px;
+      width: 90%;
+      position: relative;
+      left: 50%;
+      transform: translatex(-50%);
+    }
+
+    .social-section .si a i:hover{
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="section-1">
+    <div class="header-info d-flex ">
+      <div class="info-section d-flex justify-content-center align-items-center flex-fill ml-lg-n5">
+        <p>needhelp@gotrip.com</p>
+
+        <p>666 569 025077</p>
+
+        <p>broklyn street new york</p>
+      </div>
+
+      <div class="social-section d-flex justify-content-end align-items-center flex-fill mr-5">
+        <div class="si">
+          <a href=""><i class="fab fa-facebook fa-lg text-white mx-3"></i></a>
+        </div>
+
+        <div>
+          <a href=""><i class="fab fa-twitter fa-lg text-white mx-3"></i></a>
+        </div>
+
+        <div>
+          <a href=""><i class="fab fa-youtube fa-lg text-white mx-3"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-bar d-flex align-items-center fixed">
+      <div class="logo d-flex justify-content-center">
+        <img src="images/logo.png" class="" alt="" />
+      </div>
+      <nav class="navbar navbar-expand d-flex justify-content-center">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              Package
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">weekly Stay pacakage</a>
+              <a class="dropdown-item" href="#">Monthly Stay pacakage</a>
+              <a class="dropdown-item" href="#">Summer Special</a>
+              <a class="dropdown-item" href="#">Winter Special</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">Blog</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">Pages</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="banner">
+      <div class="banner-center">
+        <div class="row">
+          <div class="">
+            <div class="stylis-text">
+              <h1>Find your <span>Next Room!</span> </h1>
+              <p class="">Where would you like to go?</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="form">
+          <form action="" class="d-flex align-items-center justify-content-around">
+            <div class="search ml-2">
+              <input type="text" placeholder="Where Would you like to go ?">
+            </div>
+
+            <div class="select">
+              <input type="date" placeholder="Pick A date ?" />
+            </div>
+
+            <div>
+              <button type="submit" class="btn btn-warning text-white font-weight-bold mr-2 "> Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="section-heading">
+        <p class="text-primary">Featured Room Packages</p>
+        <h4 class="text-danger">Greatest Rooms <span class="text-warning"> Lowest Price </span></h4>
+      </div>
+
+      <div class="room-card d-flex justify-content-around">
+        <div class="card ">
+          <div class="card-image">
+            <img src="images/pexels-markus-spiske-26139.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="rating">
+              <h5 class="text-danger"> Rating : 8.1 <i class="fas fa-star fa-lg mx-2 text-warning"></i><span
+                  class="text-secondary ml-5 ">1563 Reviews</span></h5>
+            </div>
+            <h4 class="room-name "> Budget Rooms</h4>
+            <p class="price text-secondary font-italic">price : 1000 Rupees</p>
+          </div>
+          <hr class="line">
+          <div class="card-info d-flex justify-content-around align-items-center">
+            <div class="duration">
+              <h6>Duration: <span>24 hours</span></h6>
+            </div>
+
+            <div class="location">
+              <h6>Location:<span> Delhi</span></h6>
+            </div>
+
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/pexels-pixabay-164595.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="rating">
+              <h5 class="text-danger"> Rating : 8.5 <i class="fas fa-star fa-lg mx-2 text-warning"></i><span
+                  class="text-secondary ml-5 ">1236 Reviews</span></h5>
+            </div>
+            <h4 class="room-name "> Luxury Rooms</h4>
+            <p class="price text-secondary font-italic">price : 10,000 Rupees</p>
+          </div>
+          <hr class="line">
+          <div class="card-info d-flex justify-content-around align-items-center">
+            <div class="duration">
+              <h6>Duration: <span>24 Hours</span></h6>
+            </div>
+
+            <div class="location">
+              <h6>Location:<span> Delhi</span></h6>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="images/pexels-pixabay-271624.jpg" alt="">
+          </div>
+          <div class="info">
+            <div class="rating">
+              <h5 class="text-danger"> Rating : 9.1 <i class="fas fa-star fa-lg mx-2 text-warning"></i><span
+                  class="text-secondary ml-5">773 Reviews</span></h5>
+            </div>
+            <h4 class="room-name "> Expensive Rooms</h4>
+            <p class="price text-secondary font-italic">price : 20,000 Rupees</p>
+          </div>
+
+          <hr class="line">
+          <div class="card-info d-flex justify-content-around align-items-center">
+            <div class="duration">
+              <h6>Duration: <span>24 Hours</span></h6>
+            </div>
+
+            <div class="location">
+              <h6>Location:<span> Delhi</span></h6>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <footer style="background-color: #401070">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center text-md-left">
+              <div class="py-0">
+                <h3 class="my-4 text-warning">
+                  Go<span class="mx-1 font-italic text-primary">Trip</span>
+                </h3>
+
+                <p class="footer-links font-weight-bold">
+                  <a class="text-white p-1" href="#">Home</a>
+                  <a class="text-white p-1" href="#">Blog</a>
+                  <a class="text-white p-1" href="#">About</a>
+                  <a class="text-white p-1" href="#">Contact</a>
+                </p>
+                <p class="text-light py-4 mb-4">
+                  &copy;2020 go Trip Pvt. Ltd.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-white text-center text-md-left">
+              <div class="py-2 my-4">
+                <div>
+                  <p class="text-white">
+                    <i class="fa fa-map-marker mx-2"></i> Theodore Lowe
+                    Ap #867-859 Sit Rd.
+                    Azusa New York 39531
+
+                  </p>
+                </div>
+
+                <div>
+                  <p class="m-2"><i class="fa fa-phone mx-2"></i>(793) 151-6230</p>
+                </div>
+                <div>
+                  <p class="m-2">
+                    <i class="fa fa-envelope mx-2"></i><a href="#">support@gotrip.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-white my-4 text-center text-md-left">
+              <span class="font-weight-bold">About the Company</span>
+              <p class="text-warning my-2">
+                We are Go Trip
+                Ravels Support Company
+                Tripo is a World Leading Online
+                Tour Booking Platform
+              </p>
+              <div class="py-2">
+                <a href="#"><i class="fab fa-facebook fa-2x text-white mx-3"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-2x text-white mx-3"></i></a>
+                <a href="#"><i class="fab fa-youtube fa-2x text-white mx-3"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+</body>
+</html>

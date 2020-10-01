@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+
+header#head
+{
+    width: 100vw;
+    height: 100vh;
+     background-image:url("../images/landscape.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+#topMenu
+{
+    width: 100vw;
+    height: 10rem;
+    margin: 0px;
+    padding-top: 2rem;
+}
+
+.menuItems
+{
+    
+    width: 95vw;
+    height: 4rem;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px 1px #4b4b4b;
+    display: flex;
+    margin: auto;   
+    
+}
+
+.flex-1
+{
+    flex-basis: 50%;
+    display: flex;
+    height: 100%;
+    
+
+}
+
+.flex-1  a
+{
+    
+
+    flex-basis: 25%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: helvetica;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:tomato;
+    
+
+}
+
+.subItem
+{
+    height: auto;
+    background-color: whitesmoke;
+    flex-direction: column;
+
+    display:none;
+    box-shadow: 0px 5px 11px 0px #4b4b4b;
+    
+   
+}
+
+.subItem a
+{
+    padding: 10px;
+    color: tomato;
+    font-size: 1.2rem;
+    font-family: helvetica;
+    font-weight: 600;
+    
+    
+}
+.a-hover a:hover
+{
+    transition: 500ms;
+    background-color: #636e72;
+    color: whitesmoke;
+    
+}
+
+#dis
+{
+    flex-basis:25%;
+    
+    
+}
+
+#dis:hover .subItem 
+{   
+    display: flex;
+    
+}
+
+@media screen and (max-width:600px)
+{
+    .flex-1 a , .subItem a
+    {
+        font-size: 1rem;
+    }
+    
+    .flex-1 
+    {
+        flex-basis: 100%;
+    }
+    
+    .menuItems
+    {
+        height: 3rem;
+    }
+}
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"
+      integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
+      .section-1 {
+        background-image: url("images/mohammad-metri-1oKxSKSOowE-unsplash.jpg");
+        width: 100%;
+        height: 100vh;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .nav-div {
+        background-color: rgba(255, 255, 255,1);
+        box-shadow: 0px 0px 50px #f368e0;
+        padding-top: 12px;
+        transition: 0.5s;
+      }
+
+
+      .logo {
+        border-bottom: 6px solid #34495e;
+        border-top: 6px solid #34495e;
+        border-radius: 15px;
+        padding: 5px 0px;
+      }
+      .logo img {
+        block-size: 45px;
+      }
+
+
+      .a {
+        font-size: 25px;
+        font-family: monospace;
+        color:black;
+       
+        font-weight: bolder;
+      }
+
+      .a:hover {
+        color: tomato;
+        
+      }
+
+      .player {
+        position: absolute;
+        bottom: 30px;
+        width: 90vw;
+        height: 6rem;
+        background-color: white;
+        box-shadow: 0px 0px 1px white;
+        border-radius: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    
+      .sec-1,
+      .sec-2,
+      .sec-3 {
+        height: 100%;
+        
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="section-1">
+      <div class="nav-div d-flex align-items-center flex-column">
+        <div class="logo d-flex align-items-center mb-3 px-2">
+          <img src="images/vinyl-2241789_640.png" class="" alt="" />
+          <h2 class="sh text-danger font-weight-bold pl-2">
+            Music <span class="text-info">Portal</span>
+          </h2>
+        </div>
+        <ul class="nav nav-tabs align-items-center mb-3">
+          <li class="nav-item">
+            <a class="nav-link a" href="#">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a dropdown-toggle" data-toggle="dropdown" href="#">Charts</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Trending Songs</a>
+                <a class="dropdown-item" href="#">Weekly Trending</a>
+                <a class="dropdown-item" href="#">Monthly Trending</a>
+                <a class="dropdown-item" href="#">All time Trending</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active a" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="#">Log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link a" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="player d-flex align-items-center justify-content-around">
+        <div class="sec-1 d-flex align-items-center flex-fill">
+          <img
+            class="ml-5"
+            src="images/girl-1990347_1920.jpg"
+            style="block-size: 70px; border-radius: 5px"
+          />
+          <div class="m-3">
+            <h5 class="text-danger font-weight-bold">Dance Monkey</h5>
+            <p class="font-weight-bold">Tones and I</p>
+          </div>
+        </div>
+
+        <div class="sec-2 d-flex align-items-center flex-fill">
+          <div class="mx-2"><i class="fa fa-backward fa-lg" aria-hidden="true"></i></div>
+          <div class="m-5"><i class="fa fa-play fa-2x" aria-hidden="true"></i></div>
+          <div class="mx-2"><i class="fa fa-forward fa-lg" aria-hidden="true"></i></div>
+        </div>
+
+        <div class="sec-3 d-flex align-items-center flex-fill">
+          <div class="m-4"><i class="fa fa-volume-up fa-lg" aria-hidden="true"></i></div>
+          <div class="m-4"><i class="fa fa-random fa-lg" aria-hidden="true"></i></div>
+          <div class="m-4"><i class="fa fa-heart fa-lg" aria-hidden="true"></i></div>
+        </div >
+
+      </div>
+    </div>
+  </body>
+</html>

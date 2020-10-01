@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text transformation</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        .section_2 {
+        background-image: url("images/nurse-2019420_1920.jpg");
+        background-color: #cccccc;
+        height: 90vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+
+      .center-block {
+        width: 25rem;
+        padding: 15px;
+        position: relative;
+        top: 45%;
+        left: 80%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px grey;
+        transition: 0.5s;
+      }
+      .center-block p{
+          border-left: 10px solid rgb(37, 102, 175);
+          padding-left:10px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light bg-info">
+      <a href="#" class="navbar-brand"
+        ><img src="helt3.png" height="40" alt=""
+      /></a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#mymenu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mymenu">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle active"
+              data-toggle="dropdown"
+            >
+              Departments</a
+            >
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Dentist</a>
+              <a href="#" class="dropdown-item">Gynaecologist</a>
+              <a href="#" class="dropdown-item">ENT specialist</a>
+              <a href="#" class="dropdown-item">Cardiologist</a>
+              <a href="#" class="dropdown-item">Dermatologist</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Timetable</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="searched"
+              placeholder="search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              Search
+            </button>
+            <pre></pre>
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              login
+            </button>
+            <pre></pre>
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+              signup
+            </button>
+          </form>
+        </ul>
+      </div>
+    </nav>
+    <div class="section_2">
+        <div class="center-block">
+            <p class="text-info font-weight-bold">
+                individual Approach to Each Patient
+            </p>
+            <h3 class="font-weight-bold">Medical Service </h3>
+          
+          <button type="button" class="btn btn-danger my-2">Make An Appointment</button>
+        </div>
+      </div>
+    <div>
+      <footer style="background-color: #2c292f">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center text-md-left">
+              <div class="py-0">
+                <h3 class="my-4 text-danger">
+                  Heart<span class="mx-2 font-italic text-warning">Care</span>
+                </h3>
+
+                <p class="footer-links font-weight-bold">
+                  <a class="text-white p-1" href="#">Home</a>
+                  <a class="text-white p-1" href="#">Blog</a>
+                  <a class="text-white p-1" href="#">About</a>
+                  <a class="text-white p-1" href="#">Contact</a>
+                </p>
+                <p class="text-light py-4 mb-4">
+                  &copy;2020 Heart care health Solutions Pvt. Ltd.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-white text-center text-md-left">
+              <div class="py-2 my-4">
+                <div>
+                  <p class="text-white">
+                    <i class="fa fa-map-marker mx-2"></i> 121 King Street,
+                    Melbourne Victoria 3000 Australia
+                  </p>
+                </div>
+
+                <div>
+                  <p><i class="fa fa-phone mx-2"></i> +91 1234567891</p>
+                </div>
+                <div>
+                  <p>
+                    <i class="fa fa-envelope mx-2"></i
+                    ><a href="mailto:support@eduonix.com"
+                      >support@heartcare.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 text-white my-4 text-center text-md-left">
+              <span class="font-weight-bold">About the Company</span>
+              <p class="text-warning my-2">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                fuga animi iste doloribus a sequi, sunt temporibus vitae commodi
+                deleniti voluptas at exercitationem eaque.
+              </p>
+              <div class="py-2">
+                <a href="#"
+                  ><i class="fab fa-facebook fa-2x text-primary mx-3"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-google-plus fa-2x text-danger mx-3"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-twitter fa-2x text-info mx-3"></i
+                ></a>
+                <a href="#"
+                  ><i class="fab fa-youtube fa-2x text-danger mx-3"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
